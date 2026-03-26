@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
-app.use('/users', require('./routes/userRoutes'));
+app.use('/users', require('./Routes/userRoutes'));
 
 app.get('/', (req, res) => res.json({ message: 'BuyerForeSight API running' }));
 
